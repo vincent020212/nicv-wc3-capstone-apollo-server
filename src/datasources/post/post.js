@@ -11,7 +11,7 @@ class PostAPI extends RESTDataSource {
 
   async getPosts() {
     try {
-      const response = await axios.get("http://localhost:3001/posts");
+      const response = await axios.get(this.baseURL);
       const data = await response.data;
 
       return data;

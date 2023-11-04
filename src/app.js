@@ -56,7 +56,6 @@ async function startServer() {
     expressMiddleware(server, {
       context: async ({ req }) => {
         const { headers = {} } = req;
-        console.log(headers);
         const contextValue = {
           headers,
         };
